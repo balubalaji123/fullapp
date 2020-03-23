@@ -35,7 +35,7 @@ var transporter = nodemailer.createTransport({
     from: 'Flipr Hackathon',
     to: req.body.mail,
     subject: 'account conformation',
-  html:'welcome  '+req.body.name+'   to Flipr Hackathon to confirm your mail <a href="http://localhost:3000/signup?id='+check+'&&mail='+req.body.mail +'">click</a><br>'
+  html:'welcome  '+req.body.name+'   to Flipr Hackathon to confirm your mail <a href="http://31.220.48.239:6000/signup?id='+check+'&&mail='+req.body.mail +'">click</a><br>'
   };  
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {

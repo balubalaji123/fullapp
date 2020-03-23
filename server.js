@@ -31,4 +31,4 @@ app.use('/dashboard',dashboard)
 app.get('/*',function(req,res){
     res.sendFile(__dirname+'/dist/fliprmeanstack/index.html')
   })
-app.listen(3000)
+app.listen(6000)
